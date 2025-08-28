@@ -1,0 +1,56 @@
+# @title Simulação de Raciocínio Lógico (Unidade 1, Seção 1)
+
+# Este código simula o processo de raciocínio indutivo e dedutivo
+# descrito na Unidade 1, Seção 1, do material, para inferir uma conclusão
+# a partir de premissas, tal como no exemplo da negociação com o cliente [4, 5].
+
+print("--- Simulação de Raciocínio Lógico para Fechamento de Negócio ---")
+print("Baseado nos conceitos da Unidade 1, Seção 1: Fundamentos de Lógica")
+print("-" * 60)
+
+# ==============================================================================
+# 1. Premissas e Conclusões Indutivas (Partindo de casos particulares para o geral)
+# ==============================================================================
+# No cenário do cliente, a análise de "dezenas de testes" do software [5, 7]
+# nos leva à conclusão indutiva de que o software resolve o problema [8].
+# Simulamos essa conclusão como uma variável booleana (Verdadeiro/Falso).
+software_resolve_problema_cliente = True # Assume-se que a análise dos testes confirmou a eficácia do software [7]
+print(f"Premissa Indutiva 1 (Software Eficaz): O software da sua empresa resolve o problema do cliente? {software_resolve_problema_cliente}")
+
+# Analogamente, a observação do histórico de compras do cliente ("Nos últimos anos,
+# os softwares que resolveram nossos problemas foram adquiridos") [5, 8]
+# nos leva à conclusão indutiva de que o cliente sempre adquire soluções eficazes [8].
+cliente_sempre_adquire_solucoes_eficazes = True # Assume-se que o histórico de aquisições é consistente [8]
+print(f"Premissa Indutiva 2 (Histórico de Aquisição): O cliente sempre adquire softwares que resolvem seus problemas? {cliente_sempre_adquire_solucoes_eficazes}")
+
+print("\n" + "=" * 60)
+# ==============================================================================
+# 2. Raciocínio Dedutivo (Partindo de premissas gerais para uma conclusão particular)
+# ==============================================================================
+# Com base nas conclusões indutivas acima, aplicamos o raciocínio dedutivo [9].
+# A lógica computacional, mesmo em seus fundamentos, permite que um algoritmo
+# "tome uma decisão" se certas condições forem satisfeitas [10, 11].
+# Embora operadores lógicos como 'AND' e estruturas condicionais como 'if...then'
+# sejam formalmente aprofundados em unidades posteriores, o conceito de combinar
+# premissas para chegar a uma conclusão já está presente na Unidade 1 [12, 13].
+
+print("Aplicando Raciocínio Dedutivo para a Conclusão do Negócio:")
+
+# Se (o software resolve o problema) E (o cliente sempre adquire soluções eficazes),
+# ENTÃO (o negócio será fechado).
+if software_resolve_problema_cliente and cliente_sempre_adquire_solucoes_eficazes:
+    conclusao_dedutiva_negocio = True
+    print("\nAs premissas indutivas são VERDADEIRAS.")
+    print("Portanto, aplicando a lógica dedutiva, a conclusão é:")
+    print(f"-> O software de sua empresa será adquirido pelo cliente! {conclusao_dedutiva_negocio}") # Conclusão dedutiva [9]
+    print("\nPerspectivas são positivas para o fechamento do negócio [9].")
+else:
+    conclusao_dedutiva_negocio = False
+    print("\nPelo menos uma das premissas indutivas não é verdadeira.")
+    print(f"-> Não podemos concluir com certeza que o negócio será fechado. {conclusao_dedutiva_negocio}")
+    print("\nMais análise ou novas informações são necessárias.")
+
+print("-" * 60)
+print("\nLembre-se: A lógica é a 'arte de bem pensar' e a base para o desenvolvimento de sistemas [1, 2].")
+print("A capacidade de inferir e deduzir, mesmo que intuitivamente, é o alicerce para algoritmos complexos [14, 15].")
+print("Conectivos lógicos e estruturas de controle são a formalização desses princípios no código, abordados em profundidade nas próximas unidades [10, 11].")
